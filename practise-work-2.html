@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,36 +12,34 @@
             box-sizing: border-box;
         }
 
-        .my-page {
+        body {
             background-color: #d4e6fe;
-            width: 924px;
-            height: 729px;
-            margin: 150px auto;
-
         }
 
         .get-in-touch-block {
-            display: block;
-
             width: 730px;
             height: 572px;
-            margin: auto;
             background-color: #fdfeff;
+            margin: 200px auto;
+            padding: 30px 70px;
         }
 
         .grid-container {
-            justify-content: center;
-            align-content: center;
             display: grid;
             width: 590px;
-            height: 330px;
             grid-template-columns: 285px 285px;
-            grid-template-rows: 58px 58px 64px 92px;
+            grid-template-rows: 58px 58px 64px 92px 55px;
             gap: 20px;
             color: #242ab2;
             font-size: 18px;
             font-weight: 800;
-            margin: 100px auto;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .grid-container :nth-child(7) {
+            text-align: center;
+            grid-column: 1/3;
         }
 
         .get-in-color {
@@ -74,8 +72,16 @@
             background-color: #a4b0fc;
         }
 
+        .submit {
+            color: white;
+            background-color: blue;
+            border-radius: 50px;
+            padding: 15px 50px;
+            cursor: pointer;
+        }
+
         .thanks-text {
-            color: #bbf8e8;
+            color: #7dccb6;
             font-size: 18px;
             font-weight: 800;
         }
@@ -84,22 +90,23 @@
 </head>
 
 <body>
-    <div class="my-page">
-        <div class="get-in-touch-block">
-            <p style="font-size: 26px;" class="get-in-color">Get In Touch</p>
-            <div class="grid-container">
-                <div class="grid-item item-1">First Name</div>
-                <div class="grid-item item-2">Last Name</div>
-                <div class="grid-item item-3">Email</div>
-                <div class="grid-item item-4">Phone</div>
-                <div class="grid-item item-5">Address</div>
-                <div class="grid-item item-6">Type your message here</div>
 
+    <div class="get-in-touch-block">
+        <p style="font-size: 26px;" class="get-in-color">Get In Touch</p>
+        <div class="grid-container">
+            <div class="grid-item item-1">First Name</div>
+            <div class="grid-item item-2">Last Name</div>
+            <div class="grid-item item-3">Email</div>
+            <div class="grid-item item-4">Phone</div>
+            <div class="grid-item item-5">Address</div>
+            <div class="grid-item item-6">Type your message here</div>
+            <div>
+                <input type="submit" value="Submit" class="submit" />
             </div>
-            <p class="thanks-text">Thanks for submitting!</p>
         </div>
-
+        <p class="thanks-text">Thanks for submitting!</p>
     </div>
+
 </body>
 
 </html>
